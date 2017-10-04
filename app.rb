@@ -24,7 +24,7 @@ get('/network_events') do
 end
 
 get('/add_event') do
-
+  @events = Event.all()
   erb(:add_event)
 end
 
