@@ -24,8 +24,8 @@ get('/network_events') do
 end
 
 get('/add_event') do
-  @events = Event.all()
-  erb(:index)
+
+  erb(:add_event)
 end
 
 get('/add_user') do
