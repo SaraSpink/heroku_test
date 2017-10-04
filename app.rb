@@ -25,7 +25,7 @@ end
 
 get('/add_event') do
   @events = Event.all()
-  erb(:add_event)
+  erb(:index)
 end
 
 get('/add_user') do
