@@ -162,4 +162,25 @@ form {
   .nested_card {
     max-width: 100% !important;
   }
+
+.footer {
+    background-color: #8e308d;
+    color: #DFD6E1;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: FuturaStd-Heavy;
+    letter-spacing: .18em;
+    overflow: hidden;
+    height: 325px;
+    width: 100%;
+    bottom:0;
+    position: absolute;
+}
+
+.footer a {
+  color: #583477;
+}
+
+#footer_logo {
+  border-radius: 30px;
 }
