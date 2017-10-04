@@ -10,8 +10,17 @@ body {
   color: #DFD6E1;
 }
 
+#second_row {
+
+}
+
+.col-sm-4 {
+
+}
+
 .card {
   display: flex;
+  overflow-wrap: break-word;
   align-items: center;
   border: 0px;
   padding: 20px;
@@ -21,12 +30,14 @@ body {
 
 .nested_card {
   color: #4D276E;
+  overflow-wrap: break-word;
   padding: 20px;
   background-color: #f2dbc9;
 }
 
 .list_card {
   color: #4D276E;
+  overflow-wrap: break-word;
   padding: 50px;
   background-color: white;
 }
@@ -110,4 +121,45 @@ form {
 
 #study_list {
   color: #eae1da !important;
+}
+
+@media screen and (max-width:1000px) {
+
+  #second_row {
+    flex-wrap: wrap !important;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .col-sm-4 {
+    max-width: 100% !important;
+  }
+
+  .card {
+    max-width: 100% !important;
+  }
+
+  .nested_card {
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width:425px) {
+  #second_row {
+    flex-wrap: wrap !important;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .col-sm-4 {
+    max-width: 100% !important;
+  }
+
+  .card {
+    max-width: 100vw !important;
+  }
+
+  .nested_card {
+    max-width: 100% !important;
+  }
 }

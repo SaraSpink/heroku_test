@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20171002224435) do
     t.datetime "when"
     t.text "description"
     t.text "comments"
-    t.string "category"
   end
 
   create_table "users", force: :cascade do |t|
